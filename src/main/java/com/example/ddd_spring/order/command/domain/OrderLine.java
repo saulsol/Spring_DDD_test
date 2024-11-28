@@ -25,6 +25,10 @@ public class OrderLine {
     @Column(name = "amounts")
     private Money amounts;
 
+    protected OrderLine() {
+
+    }
+
     public OrderLine(ProductId productId, Money price, int quantity) {
         this.productId = productId;
         this.price = price;
